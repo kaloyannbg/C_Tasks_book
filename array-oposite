@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    char masiv[] = "My Strange String";
+
+    int indexArray;
+
+    for(indexArray = 0; masiv[indexArray] != '\0'; indexArray++) {
+
+    printf("%c", masiv[indexArray]);
+
+    }
+
+    printf("\n Masiva e s golemina: %d \n", indexArray);
+
+    indexArray--;
+
+    printf("First letter in string is: %c \n", masiv[0]);
+
+    printf("Last letter in string is: %c \n", masiv[indexArray]);
+
+    printf("Stringa naobratno e \'");
+    while(indexArray >= 0) {
+        printf("%c", masiv[indexArray]);
+        indexArray--;
+    }
+    printf("\'");
+
+    return 0;
+}
